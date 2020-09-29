@@ -1,84 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards Trick Css</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="card-carousel">
-      <h1>Card Carousel</h1>
-      <div class="card-container">
-        <div class="card"><span>Alexandar</span></div>
-        <div class="card"><span>Alice</span></div>
-        <div class="card"><span>Oxford</span></div>
-        <div class="card"><span>Julia</span></div>
-        <div class="card"><span>Rayman</span></div>
-        <div class="card"><span>Gordon</span></div>
-        <div class="card"><span>Tom</span></div>
-        <div class="card"><span>Mike</span></div>
-        <div class="card"><span>Peter</span></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cards Trick Css</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="card-carousel">
+    <h1>Card Carousel</h1>
+    <div class="card-container">
+      <div class="card"><span>Alexandar</span></div>
+      <div class="card"><span>Alice</span></div>
+      <div class="card"><span>Oxford</span></div>
+      <div class="card"><span>Julia</span></div>
+      <div class="card"><span>Rayman</span></div>
+      <div class="card"><span>Gordon</span></div>
+      <div class="card"><span>Tom</span></div>
+      <div class="card"><span>Mike</span></div>
+      <div class="card"><span>Peter</span></div>
+    </div>
+  </div>
+
+  <div class="hover-cards">
+    <h1>Hovering Cards</h1>
+    <div class="card-container">
+      <div class="card"><span>Alexandar</span></div>
+      <div class="card"><span>Alice</span></div>
+      <div class="card"><span>Oxford</span></div>
+    </div>
+  </div>
+
+  <div class="expand-cards">
+    <h1>Expand&Collapsable Cards</h1>
+    <div class="card-container">
+      <div class="card">
+        <i class="fas fa-user fa-6x"></i>
+
+        <span>Alexandar</span>
+        <i class="fas fa-arrow-down fa-2x"></i>
+      </div>
+      <div class="card">
+        <i class="fas fa-user fa-6x"></i>
+        <span>Alice</span>
+        <i class="fas fa-arrow-down fa-2x"></i>
+      </div>
+      <div class="card">
+        <i class="fas fa-user fa-6x"></i>
+        <span>Oxford</span>
+        <i class="fas fa-arrow-down fa-2x"></i>
       </div>
     </div>
+  </div>
 
-    <div class="hover-cards">
-      <h1>Hovering Cards</h1>
-      <div class="card-container">
-        <div class="card"><span>Alexandar</span></div>
-        <div class="card"><span>Alice</span></div>
-        <div class="card"><span>Oxford</span></div>
+  <div class="hover-bg-cards">
+    <h1>Hover Cards</h1>
+    <div class="card-container">
+      <div class="card">
+        <i class="fas fa-user fa-6x"></i>
+
+        <span>Alexandar</span>
+
+      </div>
+      <div class="card">
+        <i class="fas fa-user fa-6x"></i>
+        <span>Alice</span>
+
+      </div>
+      <div class="card">
+        <i class="fas fa-user fa-6x"></i>
+        <span>Oxford</span>
+
       </div>
     </div>
+  </div>
 
-    <div class="expand-cards">
-      <h1>Expand&Collapsable Cards</h1>
-      <div class="card-container">
-        <div class="card">
-          <i class="fas fa-user fa-6x"></i>
+  <div class="clip-cards">
+    <h1>Rotate Cards</h1>
+    <div class="card-container">
+      <div class="scene scene--card">
 
-          <span>Alexandar</span>
-          <i class="fas fa-arrow-down fa-2x"></i>
+        <div class="clip-card">
+          <div class="card__face card__face--front">Alexandar</div>
+          <div class="card__face card__face--back">1</div>
         </div>
-        <div class="card">
-          <i class="fas fa-user fa-6x"></i>
-          <span>Alice</span>
-          <i class="fas fa-arrow-down fa-2x"></i>
+      </div>
+
+      <div class="scene scene--card">
+
+        <div class="clip-card">
+          <div class="card__face card__face--front">Alice</div>
+          <div class="card__face card__face--back">2</div>
         </div>
-        <div class="card">
-          <i class="fas fa-user fa-6x"></i>
-          <span>Oxford</span>
-          <i class="fas fa-arrow-down fa-2x"></i>
+      </div>
+
+      <div class="scene scene--card">
+
+        <div class="clip-card">
+          <div class="card__face card__face--front">3</div>
+          <div class="card__face card__face--back">Oxford</div>
         </div>
       </div>
     </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 
-    <div class="hover-bg-cards">
-      <h1>Hover Cards</h1>
-      <div class="card-container">
-        <div class="card">
-          <i class="fas fa-user fa-6x"></i>
-
-          <span>Alexandar</span>
-          
-        </div>
-        <div class="card">
-          <i class="fas fa-user fa-6x"></i>
-          <span>Alice</span>
-       
-        </div>
-        <div class="card">
-          <i class="fas fa-user fa-6x"></i>
-          <span>Oxford</span>
-          
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
 </html>
